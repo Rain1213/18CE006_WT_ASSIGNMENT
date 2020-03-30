@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Feedback Form</title>
+	<style>
+		option{
+			padding: 3px;
+		}
+        legend{
+            color: white;
+        }
+
+        body{
+            background: url("src/bg.jpg"); 
+            background-size: cover;
+        }
+        form{
+            text-align: center;
+            height: auto;
+            width: auto;
+            color: white;
+            font-size: 20px;
+        }
+	</style>
+</head>
+<body>
+	<fieldset>
+		<legend >
+			Feedback Form
+		</legend>
+		<form>
+    	Student Name:<input type="text" id="text1" onblur="capFun1()" style="width: 20%;"><br><br>
+    	Student ID:<input type="text" id="text2"  onblur="capFun2()"><br><br>
+    	Gender:<br>
+    	Male<input type="radio" name="myGender">
+    	Female<input type="radio" name="myGender">
+    	Others:<input type="radio" name="myGender"><br><br>
+    	Select Subject:<select name="selectSubject" style="width: 20%;">
+    		<option>CO</option>
+    		<option>DBMS</option>
+    		<option>OS</option>
+    		<option>DSA</option>
+    		<option>WT</option>
+    		<option>UE</option>
+    	</select><br><br>
+    	Select Faculty:<select name="selectFaculty" style="width: 20%;">
+    		<option>Prof. Ronak Patel</option>
+    		<option>Prof. Ritesh Patel</option>
+    		<option>Prof. Minal Maniar</option>
+    		<option>Prof. Chintan Bhatt</option>
+    		<option>Prof. Vaishali Mewada</option>
+    		<option>Prof. Arpita Shah</option>
+    		<option>Prof. Aayushi Chaudhary</option>
+    	</select><br><br>
+
+    	<div>Why did you chose this course?<br/>
+			<select id="courseReason" style="width : 30%;" class="form-control">
+				<option>Degree requirement</option>
+			    <option>Personal interest</option>
+			    <option>Advised by Faculties</option>
+			</select>
+		</div><br>
+        
+        <div>
+        	Level of knowledge at start of course:<br>
+        	<select id="startKnowledge" style="width: 30%;">
+        		<option>Excellent</option>
+        		<option>Very Good</option>
+        		<option>Good</option>
+        		<option>Poor</option>
+        		<option>Very Poor</option>
+        	</select>
+        </div><br>
+
+        <div>
+        	Level of knowledge at end of course:<br>
+        	<select id="endKnowledge" style="width: 30%;">
+        		<option>Excellent</option>
+        		<option>Very Good</option>
+        		<option>Good</option>
+        		<option>Poor</option>
+        		<option>Very Poor</option>
+        	</select>
+        </div><br>
+
+        <div>
+        	Level of communication:<br>
+        	<select id="communicationLevel" style="width: 30%;">
+        		<option>Excellent</option>
+        		<option>Very Good</option>
+        		<option>Good</option>
+        		<option>Poor</option>
+        		<option>Very Poor</option>
+        	</select>
+        </div><br>
+
+        <div>Would you recommend this course to other students?<br/>
+			<select id="recommendation" style="width : 30%;" class="form-control">
+				<option>Yes</option>
+				<option>No</option>
+				<option>Not sure</option>
+			</select>
+		</div><br>
+        
+        Any Comments:<br>
+        <textarea>
+        	
+        </textarea>
+        <br><br>
+        <input type="submit" name="submitButton" onclick="subFun()">
+        
+
+        
+    </form>
+	</fieldset>
+
+    <script type="text/javascript">
+        function capFun1(){
+            var let = document.getElementById("text1");
+            let.value = let.value.toUpperCase();
+        }
+
+        function capFun2(){
+            var let = document.getElementById("text2");
+            let.value = let.value.toUpperCase();
+        }
+
+        function subFun(){
+            alert("Yep, Form Submitted")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family: "montserrat";
+
+}
+html{
+	font-size: 25px;
+}
+
+
+body{
+	background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("src/computer.jpg") no-repeat center center fixed;
+	-webkit-background-size:cover;
+	-o-background-size: cover;
+	background-size: cover;
+	display: inline-block;
+	text-align: center;
+
+
+}
+
+@media screen and (max-width:1020px){
+	html{
+		font-size:20px;
+		
+	}
+}
+
+@media screen and (max-width:850px){
+	html{
+		font-size:14px;
+	}
+
+
+
+
+}
+.centitle{
+	position: absolute;
+	top: 2rem;
+	left: 50%;
+	transform: translate(-50%,0);
+	font-family: fantasy;
+	font-size: 2.5rem;
+	font-weight: bold;
+	color: white;
+}
+.left{
+	position: absolute;
+	top: 30%;
+	left:6%;
+	height: 60%;
+	width: 25%;
+	display: inline-block;
+	
+
+
+}
+.card{
+	
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transition: all 0.5s ease;
+}
+
+.card:hover{
+	transform: rotateY(180deg);
+
+}
+
+.lfront{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background:linear-gradient(rgba(0,0,0,0.4) ,rgba(0,0,0,0.4)),url("src/alan.jpg") no-repeat center center ;
+	-webkit-background-size:cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: white;
+	backface-visibility: hidden;
+	border-radius: 5%;	
+}
+.lback{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #708090;
+	-webkit-background-size:cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: white;
+	transform: rotateY(180deg);
+	border-radius: 5%;
+}
+
+
+.mid{
+	position: absolute;
+	top: 30%;
+	left:38%;
+	height: 60%;
+	width: 25%;
+	
+}
+
+.mfront{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background:linear-gradient(rgba(0,0,0,0.4) ,rgba(0,0,0,0.4)),url("src/tim.jpg") no-repeat center center ;
+	-webkit-background-size:cover;
+	-o-background-size: cover;
+	background-size: cover;
+	backface-visibility: hidden;
+	border-radius: 5%;
+
+}
+
+.mback{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #708090;
+	-webkit-background-size:cover;
+	-o-background-size: cover;
+	background-size: cover;
+	transform: rotateY(180deg);
+	border-radius: 5%;
+
+}
+
+.right{
+	position: absolute;
+	top: 30%;
+	left:70%;
+	height: 60%;
+	width: 25%;
+	
+	
+}
+.rfront{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background:linear-gradient(rgba(0,0,0,0.4) ,rgba(0,0,0,0.4)),url("src/ada.jpg") no-repeat center center ;
+	-webkit-background-size:cover;
+	-o-background-size: cover;
+	background-size: cover;
+	backface-visibility: hidden;
+	border-radius: 5%;
+}
+
+.rback{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #708090;
+	-webkit-background-size:cover;
+	-o-background-size: cover;
+	background-size: cover;
+	transform: rotateY(180deg);
+	border-radius: 5%;
+}
+.info{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,0);
+	font-family: sans-serif;
+	font-size: 1.8rem;
+	color: #A9A9A9;
+}
+.back_content{
+	padding: 5px 5px 5px 5px;
+	
+	position: absolute;
+	top: 50%;
+	
+	transform: translate(0,-50%);
+	font-family: sans-serif;
+	font-size: 1rem;
+	font-style: italic;
+	color: #D3D3D3;
+}
+
+ul{
+	position: relative;
+	padding: 0px 20px 0px 10px;
+	text-align:  left;
+}
+li{
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+.sm{
+	position: absolute;
+	top:170%;
+	left: 42%;
+	margin: 20px 0px;
+	
+}
+.sm a{
+	display: inline-flex;
+	width: 70px;
+	height: 70px;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 40px;
+	transition: 0.4s;
+	border-radius: 50%;
+}
+
+.sm a:hover{
+	color: blue;
+	background-color: white;
+}

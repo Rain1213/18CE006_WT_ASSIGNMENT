@@ -1,0 +1,60 @@
+*{
+	margin: 0;
+}
+
+body{
+	background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("src/bio.jpg") no-repeat center center fixed;
+	background-size: cover;
+
+}
+
+.title{
+	font-size: calc(48px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+	color: white;
+	justify-content: center;
+	align-self: center;
+	text-align: center;
+	padding: 3vw 0 2vw 0;
+}
+.bd{
+	background-color: rgba(0,0,0,0.5);
+	padding-top:1vw;
+	padding-bottom: 1vw;
+}
+
+.text{
+	position: relative;
+	margin: 0 10% 0 10%;
+	align-content: center;
+	text-align: center;
+	font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+	color: lightgrey;
+
+}
+
+.table{
+	padding-top: 2vw;
+	position: relative;
+	margin: 0 1vw 0 1vw;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	
+}
+
+table{
+	border: 1vw double;
+	color: white;
+	border-color: white;
+	font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+	width: 60%;
+	margin: 0 auto;
+}
+
+tr:first-child{
+	font-weight: bold;
+	color: blue;
+}
+td:first-child{
+	color: blue;
+}

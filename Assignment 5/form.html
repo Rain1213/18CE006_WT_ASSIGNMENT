@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>National Workshop 2020</title>
+	<link rel="stylesheet" type="text/css" href="from.css">
+</head>
+<body>
+	<header>
+		National Workshop on Web Technology
+	</header>
+	<sub>
+		We are pleased to inform you that NW-WT 2020 will be hosted by Charusat University
+	</sub>
+
+	<div>
+		Please Fill in The Details to not miss on this amazing opportunity.
+	</div>
+	<form method="POST" action="form.php">
+		<fieldset>
+			<legend>REGISTER HERE</legend>
+
+			<div id="name">
+			<input type="text" name="fname" id="fname" placeholder="First name">
+			<input type="text" name="lname" id="lname" placeholder="Last name">
+			</div>
+
+			<div id="contact">
+			<input type="Email" name="myEmail" id="myEmail" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+			<input type="phone" name="phone" id="phone" placeholder="Mobile Number" >
+			</div>
+
+			<div>
+			<select name="myType" id="myType" >
+				<option value="" disabled selected>WHO AM I?</option>
+    			<option>Student</option>
+    			<option>Faculty</option>
+    			<option>Professional</option>
+    			<option>Company Representative</option>
+    		</select>
+    		</div>
+
+    		<label>Will this be your first visit?</label>
+    		<div id="radio">
+    			<input type="radio" name="YN" value="yes" id="YN">Yes
+    			<input type="radio" name="YN" value="no" id="YN">No
+    		</div>
+
+    		<button type="submit" id="submit">Be a Part</button>
+			
+		</fieldset>
+
+	</form>
+
+	
+</body>
+</html>
